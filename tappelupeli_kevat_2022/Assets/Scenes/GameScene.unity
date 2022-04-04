@@ -243,9 +243,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.57459867}
+  m_Offset: {x: -0.016196012, y: -0.5624515}
   serializedVersion: 2
-  m_Radius: 0.32857394
+  m_Radius: 0.29213285
 --- !u!61 &462458686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,7 +259,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.024450898, y: 0.28118658}
+  m_Offset: {x: -0.007941186, y: 0.24879467}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -270,7 +270,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.77744937, y: 0.9994619}
+  m_Size: {x: 0.76125324, y: 1.0642457}
   m_EdgeRadius: 0
 --- !u!114 &462458687
 MonoBehaviour:
@@ -285,6 +285,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MyRigidbody: {fileID: 462458684}
+  Feet: {fileID: 462458685}
+  Ground:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &501638351
 GameObject:
   m_ObjectHideFlags: 0
@@ -581,7 +585,7 @@ GameObject:
   - component: {fileID: 877473221}
   - component: {fileID: 877473220}
   - component: {fileID: 877473219}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
