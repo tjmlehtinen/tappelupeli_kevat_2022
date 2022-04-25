@@ -23,7 +23,8 @@ public class PlayerMovement : MonoBehaviour
     {
         // otetaan tieto liikkumisnäppäinten painamisesta
         horizontalMovement = Input.GetAxis("Horizontal");
-        // Debug.Log(horizontalMovement);
+        // annetaan tieto liikkeestä animaattorille
+        myAnimator.SetFloat("Speed", Mathf.Abs(horizontalMovement));
         // jos painetaan hyppynappia, niin hypätään
         if (Input.GetButtonDown("Jump") && Feet.IsTouchingLayers(Ground))
         {
