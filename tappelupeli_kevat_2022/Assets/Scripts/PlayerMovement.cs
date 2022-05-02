@@ -33,6 +33,15 @@ public class PlayerMovement : MonoBehaviour
             // lisätään hyppyvektori rigidbodyyn impulssina
             MyRigidbody.AddForce(jumpVector, ForceMode2D.Impulse);
         }
+        // tarkastatetaan koskeeko maahan ja kerrotaan se animaattorille
+        if (Feet.IsTouchingLayers(Ground))
+        {
+            myAnimator.SetBool("IsTouchingGround", true);
+        }
+        else
+        {
+            myAnimator.SetBool("IsTouchingGround", false);
+        }
     }
     void FixedUpdate() 
     {
